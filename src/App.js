@@ -13,7 +13,7 @@ function App(){
          storage:"5GB Storage" ,
          poject:"Unlimited Public Projects",
          access:"Community Access",
-         limit :"Unlimited Private Projects",
+         projects:"Unlimited Private Projects",
          support:"Dedicated Phone Support",
          domain:"Free Subdomain",
          report:"Monthly Status Reports"
@@ -26,7 +26,7 @@ function App(){
         storage:"50GB Storage" ,
         poject:"Unlimited Public Projects",
         access:"Community Access",
-        limit:"Unlimited Private Projects",
+        projects:"Unlimited Private Projects",
         support:"Dedicated Phone Support",
         domain:"Free Subdomain",
         report:"Monthly Status Reports"
@@ -39,7 +39,7 @@ function App(){
         storage:"150GB Storage" ,
         poject:"Unlimited Public Projects",
         access:"Community Access",
-        limit:"Unlimited Private Projects",
+        projects:"Unlimited Private Projects",
         support:"Dedicated Phone Support",
         domain:"Free Subdomain",
         report:"Monthly Status Reports"
@@ -66,15 +66,14 @@ export default App;
 function Product({prod}){
     return(
         <Card style={{ width: '18rem' }}>
-        <Card.Title variant="top"  /> 
+        <Card.Title variant="top" />
         <Card.Body>
           <Card.Title>{prod.productTitle}</Card.Title>
           <Card.Title>{prod.productTitlee}</Card.Title>
           <Card.Text><span>&#10003;</span> {prod.user}</Card.Text>
           <Card.Text><span>&#10003;</span>{prod.storage}</Card.Text>
-          <Card.Text><span>&#10003;</span>{prod.poject}</Card.Text>
           <Card.Text><span>&#10003;</span>{prod.access}</Card.Text>
-          <Card.Text><span>&#10003;</span>{prod.limit}</Card.Text>
+          <Card.Text><span>&#10003;</span>{prod.projects}</Card.Text>
           <Card.Text><span>&#10003;</span>{prod.support}</Card.Text>
           <Card.Text><span>&#10003;</span>{prod.domain}</Card.Text>
           <Card.Text><span>&#10003;</span>{prod.report}</Card.Text>
